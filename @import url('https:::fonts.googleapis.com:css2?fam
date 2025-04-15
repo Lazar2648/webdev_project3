@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+body {
+  font-family: "Roboto Mono", monospace;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgba(30, 61, 89, 0.85);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: #db0007;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 2rem auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.5rem;
+}
+
+footer {
+  background-color: rgba(30, 61, 89, 0.85);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+li {
+  margin-bottom: 1.2rem;
+}
+
+section {
+  background-color: rgba(30, 61, 89, 0.85);
+  padding: 1.5em;
+  border-radius: 1em;
+  box-shadow: 0.5em 0.5em 2em floralwhite;
+  margin: 3em auto;
+  max-width: 70rem;
+  color: white;
+}
+
+@media (max-width: 768px){
+  nav li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
+}
+
