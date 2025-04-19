@@ -6,8 +6,12 @@ function initMap() {
   	zoom: 14,
   	mapTypeId: google.maps.MapTypeId.SATELLITE,
   	mapTypeControlOptions: {
-  		position: google.maps.ControlPosition.BOTTOM_CENTER
-  	} 
+  	  position: google.maps.ControlPosition.BOTTOM_CENTER
+  	},
+  	zoomControl: true,
+  	zoomControlOptions: {
+  	  position: google.maps.ControlPosition.RIGHT_CENTER
+  	}
   };
 
   var map = new google.maps.Map(el, mapOptions);
