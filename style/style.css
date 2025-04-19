@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 #wrapper {
-  width: 850 px;
-  height: 600 px;
+  width: 850px;
+  height: 600px;
   background-color: rgba(30, 61, 89, 0.85);
   margin: 0 auto;
   overflow: hidden;
