@@ -12,3 +12,13 @@ function initMap() {
 
   var map = new google.maps.Map(el, mapOptions);
 }
+
+var marker = new google.maps.Marker({
+  position: myLocation,
+  map: map,
+  label: {
+  	text: "🤑"
+  	fontSize:"24px"
+  },
+  title: "Montreux 🤑"
+});
