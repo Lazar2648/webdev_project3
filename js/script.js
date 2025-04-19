@@ -17,9 +17,21 @@ function initMap() {
     position: myLocation,
     map: map,
     label: {
-      text: "🤑"
+      text: "🤑",
   	  fontSize:"24px"
     },
-    title: "Montreux 🤑"
+    title: "Montreux 🤑",
+    animation: google.maps.Animation.BOUNCE
+  });
+
+  var contentString = "<h1>Casino Barrière Montreux</h1><p>It's not gambling if you know you are going to win</p>";
+
+  var infowindow = new google.maps.InfoWindow({
+	content: contentString
+  });
+
+  marker.addListener("click", function () {
+  	infowindow.open(map, marker);
   });
 }
+
