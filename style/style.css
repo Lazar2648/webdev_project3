@@ -137,7 +137,18 @@ li.no-number {
 
   nav ul{
     display: block;
-    
+    text-align: center;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 28px;
+    color: #004080;
+    margin-top: 10px;
+  }
+
+  section {
+    padding: 20px;
   }
 }
 
