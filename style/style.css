@@ -8,6 +8,13 @@
   overflow: hidden;
 }
 
+#canvas {
+  width: 700px;
+  height: 500px;
+  background-color: rgba(30, 61, 89, 0.85);
+  margin: 30px auto;
+}
+
 body, p, li {
   font-family: Georgia, serif;
 }
