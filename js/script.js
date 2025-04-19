@@ -16,13 +16,16 @@ function initMap() {
 
   var map = new google.maps.Map(el, mapOptions);
 
-
   var marker = new google.maps.Marker({
-    position: myLocation,
-    map: map,
-    label: {
-      text: "🤑",
-  	  fontSize:"24px"
+  position: myLocation,
+  map: map,
+  icon: {
+    url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(`
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+        <text x="0" y="30" font-size="30">🤑</text>
+      </svg>
+    `),
+    scaledSize: new google.maps.Size(40, 40)
     },
     title: "Montreux 🤑",
     animation: google.maps.Animation.BOUNCE
