@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-  	<title>Map</title>
-  	<meta name="viewport" content="initial-scale=1.0">
   	<meta charset="utf-8">
-  	<link rel="stylesheet" href="basicmap.css">
-  	<script src="https://maps.googleapis.com/maps/api/js?AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"
-  	  async defer></script>
+    <title>Montreux</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  	<script async defer src="https://maps.googleapis.com/maps/api/js?AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"></script>
+    <script src="js/script.js"></script>
   </head> 
-  
   <body>
+    <div id="wrapper">
+      <div id="canvas"></div>
+    </div>
     <nav>
       <ul> 
         <li><a href="index.html">About Me</a></li>
         <li><a href="soccer.html">Soccer</a></li>
         <li><a href="resume.html">Resume</a></li>
+        <li><a href="map.html">Montreux, Switzerland</a></li>
       </ul>
     </nav>
     <main>
-    <div id="map"></div>
+    <section>
+      <h1>Montreux</h1>
+    </section>
     </main>
   </body>
 </html>
