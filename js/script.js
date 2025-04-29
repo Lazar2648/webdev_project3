@@ -42,31 +42,32 @@ function initMap() {
   });
 }
 
-const images = [
-  "images/image5_montreux.png", 
-  "images/image1_montreux.jpg", 
-  "images/image2_montreux.jpg",
-  "images/image3_montreux.jpg",
-  "images/image4_montreux.jpg",
-];
+document.addEventListener("DOMContentLoaded", () => {
+  const images = [
+    "images/image5_montreux.png", 
+    "images/image1_montreux.jpg", 
+    "images/image2_montreux.jpg",
+    "images/image3_montreux.jpg",
+    "images/image4_montreux.jpg"
+  ];
 
-let currentIndex = 0;
-const slide = document.getElementById("slide");
-const prevBtn = document.getElementById("prev");
-const nextBtn = document.getElementById("next");
+  let currentIndex = 0;
+  const slide = document.getElementById("slide");
+  const prevBtn = document.getElementById("prev");
+  const nextBtn = document.getElementById("next");
 
-function showImage(index) {
-  slide.src = images[index];
-}
+  function showImage(index) {
+    slide.src = images[index];
+  }
 
-prevBtn.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  showImage(currentIndex);
-});
+  prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  });
 
-nextBtn.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % images.length;
-  showImage(currentIndex);
-});
+  nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  });
 
 
