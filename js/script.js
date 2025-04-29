@@ -54,3 +54,5 @@ let currentIndex = 0;
 const slide = document.getElementById("slide");
 
 
+
+
