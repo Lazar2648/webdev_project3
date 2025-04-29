@@ -16,7 +16,7 @@
 }
 
 body, p, li {
-  font-family: Georgia, serif;
+  font-family: Georgia, "Times New Roman",serif;
 }
 
 body {
@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: "Roboto Mono", monospace, sans-serif;
+  font-family: "Roboto Mono", "Times New Roman", sans-serif;
 }
 
 header {
@@ -110,20 +110,11 @@ li.no-number {
   margin-left: 1.5rem;
 }
 
-@media (max-width: 768px){
-  nav li {
-    display: block;
-    margin: 0.5rem 0;
-  }
 
-  body {
-    font-size: 0.9rem;
-  }
-}
 
 @media (max-width: 600px) and (max-width: 899px) {
   body {
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", "Times New Roman",sans-serif;
     background-color: #eaf7ff;
     font-size: 0.95rem;
   }
@@ -152,4 +143,13 @@ li.no-number {
   }
 }
 
+@media (min-width: 768px) {
+  nav li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 
+  body {
+    font-size: 1rem;
+  }
+}
