@@ -64,6 +64,9 @@ prevBtn.addEventListener("click", () => {
   showImage(currentIndex);
 });
 
-
+nextBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  showImage(currentIndex);
+});
 
 

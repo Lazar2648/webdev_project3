@@ -105,6 +105,18 @@ video {
   height: auto;
 }
 
+#slider {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  overflow: hidden;
+  border: 3px solid #db0007;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
 li.no-number {
   list-style: none;
   margin-left: 1.5rem;
