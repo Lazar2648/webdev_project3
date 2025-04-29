@@ -31,7 +31,7 @@ function initMap() {
     animation: google.maps.Animation.BOUNCE
   });
 
-  var contentString = "<h1>Casino Barrière Montreux</h1><p>It's not gambling if you know you are going to win</p>";
+  var contentString = "<h1>Casino Barrière Montreux</h1><p>Montreux Casino (Casino Barrière de Montreux) is a casino located in Montreux, Switzerland on the shoreline of Lake Geneva. It has served as the venue for the Montreux Jazz Festival and was rebuilt following a 1971 fire memorialized in the Deep Purple song 'Smoke on the Water'. It is a property of Groupe Lucien Barrière. The casino housed Mountain Studios which has since become the museum Queen: The Studio Experience.</p>";
 
   var infowindow = new google.maps.InfoWindow({
 	content: contentString
@@ -41,4 +41,13 @@ function initMap() {
   	infowindow.open(map, marker);
   });
 }
+
+const images = [
+  "images/image5_montreux.png", 
+  "images/image1_montreux.jpg", 
+  "images/image2_montreux.jpg",
+  "images/image3_montreux.jpg",
+  "images/image4_montreux.jpg",
+];
+
 
