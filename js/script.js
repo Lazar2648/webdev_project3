@@ -52,6 +52,17 @@ const images = [
 
 let currentIndex = 0;
 const slide = document.getElementById("slide");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+
+function showImage(index) {
+  slide.src = images[index];
+}
+
+prevBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImage(currentIndex);
+});
 
 
 
