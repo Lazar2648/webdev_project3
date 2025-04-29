@@ -50,4 +50,7 @@ const images = [
   "images/image4_montreux.jpg",
 ];
 
+let currentIndex = 0;
+const slide = document.getElementById("slide");
+
 
