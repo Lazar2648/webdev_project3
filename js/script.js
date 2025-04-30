@@ -60,12 +60,12 @@ document.addEventListener("DOMContentLoaded", () => {
     slide.src = images[index];
   }
 
-  prevBtn.addEventListener("click", () => {
+  document.getElementById("prev").addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     showImage(currentIndex);
   });
 
-  nextBtn.addEventListener("click", () => {
+  document.getElementById("next").addEventListener("click", () => {
     currentIndex = (currentIndex + 1) % images.length;
     showImage(currentIndex);
   });
